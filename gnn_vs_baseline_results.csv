@@ -1,0 +1,3 @@
+method,roc_auc
+Baseline (PageRank+RF),1.0
+Proposed (Confidence-Aware GAT),1.0

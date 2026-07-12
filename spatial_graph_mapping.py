@@ -7,6 +7,8 @@ import numpy as np
 import networkx as nx
 import community as community_louvain
 import matplotlib.pyplot as plt
+plt.rcParams["font.family"] = "AppleGothic"
+plt.rcParams["axes.unicode_minus"] = False
 import os
 import sys
 

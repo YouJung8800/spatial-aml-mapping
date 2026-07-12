@@ -29,3 +29,25 @@
 pip install -r requirements.txt
 python3 spatial_graph_mapping.py
 ```
+
+## Advanced: Confidence-Aware Graph Attention Network (연구 확장)
+
+DUSt3R의 신뢰도 가중(confidence-weighted) 최적화 개념을 그래프 신경망
+기반 AML 탐지에 이식한 실험적 확장입니다 (`gnn_aml_detector.py`).
+
+### 핵심 기여
+- GATv2 기반 이상탐지에 거래 신뢰도를 엣지 특징으로 명시적 반영
+- 기존 PageRank+RandomForest 방식과의 정량 비교
+- GNNExplainer 기반 설명 안정성(explanation stability) 검증 —
+  EU AI Act(2026.08 고위험 AI 조항 발효)가 요구하는 감사가능성에 대응
+
+### 한계 (정직하게 명시)
+- 합성 데이터 기반 검증. 실제 거래 데이터 미확보
+- 논문 원본(DUSt3R, FraudGT) 수준의 대규모 검증은 미실시
+- 이 구현은 "새 파운데이션 모델의 발명"이 아니라, 기존 기법의
+  도메인 간 이식(cross-domain transfer) 실험임
+
+### 실행
+```bash
+pip install torch torch_geometric scikit-learn pandas numpy matplotlib
+python3 gnn_aml_detector.py
