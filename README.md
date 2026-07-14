@@ -1,5 +1,4 @@
-# Spatial Graph Mapping for AML Blind-Spot Detection
-By 서강대학교 경제학과 김유정
+# Spatial Graph Mapping for AML Blind-Spot Detection 서강대학교 경제학과 김유정
 
 ## 📌 프로젝트 개요 (Project Overview)
 본 프로젝트는 기존 룰베이스(Rule-based) FDS(이상거래탐지시스템)가 놓치는 자금세탁(AML)의 사각지대_Blind-Spot를 찾아내기 위해 기획되었습니다. 
